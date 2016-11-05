@@ -8,17 +8,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="id.sch.smktelkom_mlg.learn.intent2.MainActivity">
+    tools:context="id.sch.smktelkom_mlg.learn.intent2.InputActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Biodata belum ada, isi terlebih dahulu"
-        android:id="@+id/textViewBiodata" />
+        android:id="@+id/editTextName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextThnLhr" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Isi Biodata"
-        android:id="@+id/buttonInput" />
+        android:text="SELESAI"
+        android:id="@+id/buttonFINISH"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
 </LinearLayout>
